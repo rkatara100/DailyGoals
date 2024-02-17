@@ -1,0 +1,91 @@
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      /* border: 1px solid black; */
+
+}
+
+body {
+      background-color: rgb(220, 213, 213);
+}
+
+.container {
+      background: linear-gradient(to right, #767ef2, #8ff27d, #ff8c00);
+      width: 70%;
+      margin: auto;
+      min-height: 100vh;
+      padding: 30px;
+      transform: background rotate(10deg);
+}
+
+h1 {
+
+      text-align: center;
+      font: 100 4em cursive;
+      color: rgb(245, 241, 245);
+}
+
+form {
+      display: flex;
+      flex-direction: column;
+}
+
+input,
+textarea,
+button {
+      padding: 10px;
+      border: 1px solid rgba(0, 0, 0, 0.5);
+      font: 100 1.1rem sans-serif;
+      border-radius: 5px;
+      margin-top: 2rem;
+      outline: none;
+}
+
+button {
+      background-color: rgb(50, 50, 50);
+      cursor: pointer;
+      transform: all 0.5s ease;
+      color: white;
+}
+
+button:hover {
+      background-color: rgb(7, 7, 245);
+
+}
+
+/* Task */
+
+
+.task {
+      background-color: rgb(245, 223, 223);
+      display: flex;
+      color: black;
+      border: 1px solid black;
+      align-items: center;
+      font: 100 1.1rem sans-serif;
+      padding: 30px;
+      margin: 2vmax;
+      outline: none;
+      border-radius: 5px;
+}
+
+.deletebtn {
+      border-radius: 100%;
+      height: 30px;
+      width: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: -2px;
+      margin-left: 10px;
+      background-color: rgba(123, 112, 112, 0.949);
+}
+
+.task>div {
+      width: 100%;
+}
+
+.task span {
+      color: rgba(red, green, blue, alpha)
+}
