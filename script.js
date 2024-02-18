@@ -79,3 +79,20 @@ form.addEventListener("submit", (e) => {
 
 });
 
+const darkmode = new Darkmode({
+      // Whether dark mode is enabled by default
+      dark: false,
+      // Whether users can toggle dark mode
+      toggle: true,
+      // Label for the toggle button
+      label: '🌓',
+});
+
+// Attach darkmode-js to the document
+darkmode.showWidget();
+
+// You can listen to events if you want
+darkmode.onChange = () => {
+      console.log('Dark mode changed to:', darkmode.isActivated());
+};
+
