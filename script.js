@@ -4,8 +4,17 @@ const description = document.getElementById("description");
 const form = document.querySelector("form");
 const container = document.querySelector(".container");;
 
+const cursor = document.querySelector(".cursor");
+
+window.addEventListener("mousemove", (e) => {
+      cursor.style.left = e.pageX - 4 + "px";
+      cursor.style.top = e.pageY - 4 + "px";
+
+})
+
 /*to get data form local storage */
 const tasks = localStorage.getItem("tasks") ? JSON.parse(localStorage.getItem("tasks")) : [];
+
 
 showAllTasks();
 
